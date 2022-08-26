@@ -23,9 +23,9 @@ const VacationLocation = () => {
         <>
           <TerraHeading level={3}>PM's current vacation location</TerraHeading>
 
-          <span className="vacation-location-name">
+          <div className="vacation-location-name">
             {!location ? "Loading ..." : location}
-          </span>
+          </div>
         </>
       )}
     </div>
