@@ -7,36 +7,7 @@ function Home() {
       <div className="start">
         <div className="readable-text">
           <TerraHeading level={1}>Hello! 👋</TerraHeading>
-          <div className="ingress">
-            <img src="geckos.png" alt="Geckos logo" width="100px" />
-            <div>
-              <p>Welcome to our mob session!</p>
 
-              <p>
-                In our team we use mob programming as a way to learn from each
-                other and use everyone's minds to create solutions with the
-                highest value.
-              </p>
-            </div>
-          </div>
-          <TerraHeading level={3}>Team mission</TerraHeading>
-          <p>
-            We are a platform team serving the rest of the organization. That
-            means that our users consists of both end-users using our products
-            and developers developing them.
-          </p>
-          <p className="team-mission">
-            "To provide a modern, consistent up-to-date developer experience for
-            Greenbyters, and a good customer experience of the platform."
-          </p>
-          <TerraHeading level={3}>Team values</TerraHeading>
-          <p>We value maintainable, testable and clean code.</p>
-          <p>
-            We also value accessible, composable and testable components. We
-            belive that components, in almost all cases, should be pure and
-            controlled.
-          </p>
-          <TerraHeading level={2}>Our job here today</TerraHeading>
           <p>
             Our job here today is to improve this web application in various
             ways. Our Product Manager is unfortunately (for us) on vacation, so
@@ -66,37 +37,6 @@ function Home() {
         <div className="board">
           <TerraHeading level={1}>Board</TerraHeading>
           <div className="task-cards">
-            <div className="task-card">
-              <TerraHeading level={4}>
-                Create a new design system component: checkbox
-              </TerraHeading>
-              <p>
-                One component our product misses greatly is a checkbox that
-                follows the look and feel of the application. We have started
-                implementing this component in our design system{" "}
-                <strong>Terra</strong> but there are still some pieces missing.
-              </p>
-              <p>
-                As always when developing components in the design system
-                component we believe the following aspects are important:
-              </p>
-              <ul>
-                <li>The component should be tested</li>
-                <li>The component should be typed</li>
-                <li>The component shoud be pure and controlled</li>
-              </ul>
-
-              <div>
-                <br />
-                Notes: Accessibility, real DOM elements or not, tests ...?
-              </div>
-
-              <div className="task-card-status in-progress">
-                <div className="task-card-status-text">In progress</div>
-                <div className="task-card-status-bar"></div>
-              </div>
-            </div>
-
             <div className="task-card">
               <TerraHeading level={4}>
                 Increase the code's maintainability and reusability
@@ -151,11 +91,38 @@ function Home() {
               <p>
                 We don't want to make multiple requests to the already
                 heavily-loaded <code>getVacationStatus() function</code>. Where
-                can we make the request and where do we store the result?
+                can we make the request and where do we store the result so it
+                can be displayed in multiple places?
               </p>
 
               <div className="task-card-status not-started">
                 <div className="task-card-status-text">Not started</div>
+                <div className="task-card-status-bar"></div>
+              </div>
+            </div>
+
+            <div className="task-card">
+              <TerraHeading level={4}>
+                Create a new design system component: checkbox
+              </TerraHeading>
+              <p>
+                One component our product misses greatly is a checkbox that
+                follows the look and feel of the application. We have started
+                implementing this component in our design system{" "}
+                <strong>Terra</strong> but there are still some pieces missing.
+              </p>
+              <p>
+                As always when developing components in the design system
+                component we believe the following aspects are important:
+              </p>
+              <ul>
+                <li>The component should be tested</li>
+                <li>The component should be typed</li>
+                <li>The component shoud be pure and controlled</li>
+              </ul>
+
+              <div className="task-card-status in-progress">
+                <div className="task-card-status-text">In progress</div>
                 <div className="task-card-status-bar"></div>
               </div>
             </div>
