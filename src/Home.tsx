@@ -1,3 +1,4 @@
+import AddNewStory from "./AddNewStory";
 import { TerraCheckbox, TerraHeading } from "./terra/src";
 import VacationLocation from "./VacationLocation";
 
@@ -36,6 +37,7 @@ function Home() {
         </div>
         <div className="board">
           <TerraHeading level={1}>Board</TerraHeading>
+
           <div className="task-cards">
             <div className="task-card">
               <TerraHeading level={4}>
@@ -156,6 +158,8 @@ function Home() {
                 <div className="task-card-status-bar"></div>
               </div>
             </div>
+
+            <AddNewStory />
           </div>
         </div>
       </div>
