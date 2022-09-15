@@ -1,5 +1,4 @@
-import AddNewStory from "./AddNewStory";
-import { TerraCheckbox, TerraHeading } from "./terra/src";
+import { TerraHeading } from "./terra/src";
 import VacationLocation from "./VacationLocation";
 
 function Home() {
@@ -27,10 +26,6 @@ function Home() {
               We have a design system called Terra where our reusable components
               reside. Everything related to this is located in the{" "}
               <code>./src/terra</code> folder
-            </li>
-            <li>
-              Design system components are demonstrated in our Playground which
-              can be found at the bottom of this page.
             </li>
           </ul>
           <VacationLocation />
@@ -158,30 +153,8 @@ function Home() {
                 <div className="task-card-status-bar"></div>
               </div>
             </div>
-
-            <AddNewStory />
           </div>
         </div>
-      </div>
-      <div className="playground">
-        <TerraHeading level={1}>Design system playground</TerraHeading>
-
-        <p>
-          This is our playground. We use it to display and test Terra
-          components.
-        </p>
-
-        <h2>Heading</h2>
-        <TerraHeading level={1}>Heading 1</TerraHeading>
-        <TerraHeading level={2}>Heading 2</TerraHeading>
-        <TerraHeading level={3}>Heading 3</TerraHeading>
-        <TerraHeading level={4}>Heading 4</TerraHeading>
-
-        <hr />
-        <h2>Checkbox</h2>
-
-        <p>Not done yet.</p>
-        <TerraCheckbox />
       </div>
     </>
   );

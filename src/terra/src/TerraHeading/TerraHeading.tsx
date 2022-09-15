@@ -4,7 +4,7 @@ export interface Props {
   level: HeadingLevel;
 }
 
-type HeadingLevel = 1 | 2 | 3 | 4;
+export type HeadingLevel = 1 | 2 | 3 | 4;
 
 const TerraHeading = ({ children, level = 1 }: Props) => {
   if (level === 1) {
