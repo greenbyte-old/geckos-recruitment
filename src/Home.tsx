@@ -1,35 +1,9 @@
 import { TerraHeading } from "./terra/src";
-import VacationLocation from "./VacationLocation";
 
 function Home() {
   return (
     <>
       <div className="start">
-        <div className="readable-text">
-          <TerraHeading level={1}>Hello! 👋</TerraHeading>
-
-          <p>
-            Our job here today is to improve this web application in various
-            ways. Our Product Manager is unfortunately (for us) on vacation, so
-            it will be up to us to decide the priority of the items on the
-            board.
-          </p>
-          <p>In this context it's worth knowing that:</p>
-          <ul>
-            <li>
-              We don't need to implement everything we talk about, the important
-              thing is that we reason about the problems together so we all
-              share a common understanding of the problem and possible
-              solutions.
-            </li>
-            <li>
-              We have a design system called Terra where our reusable components
-              reside. Everything related to this is located in the{" "}
-              <code>./src/terra</code> folder
-            </li>
-          </ul>
-          <VacationLocation />
-        </div>
         <div className="board">
           <TerraHeading level={1}>Board</TerraHeading>
 
